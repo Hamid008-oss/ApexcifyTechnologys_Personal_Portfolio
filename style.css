@@ -152,3 +152,31 @@ footer {
   background: #fff; 
 }
 
+
+
+/* ===== Dark Mode: Skills Section Overrides ===== */
+.dark-mode #skills {
+  background: #1a1a1a;          /* light #fff -> dark */
+  color: #eee;                   /* text readable */
+}
+
+.dark-mode #skills h2,
+.dark-mode #skills .skill p {
+  color: #eee;
+}
+
+/* Progress bar track: light grey -> dark grey */
+.dark-mode #skills .progress-bar {
+  background: #333;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Progress fill: keep brand vibe but a bit softer for dark bg */
+.dark-mode #skills .progress-bar span {
+  background: linear-gradient(90deg, #64b5f6, #ffb74d);
+}
+
+/* (Optional) Smooth theme transition */
+body, section, .card, #skills .progress-bar, #skills .progress-bar span {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
