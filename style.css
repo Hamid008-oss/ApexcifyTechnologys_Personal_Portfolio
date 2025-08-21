@@ -180,3 +180,38 @@ footer {
 body, section, .card, #skills .progress-bar, #skills .progress-bar span {
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
+
+
+
+/* ===== Dark Mode: Contact Section ===== */
+.dark-mode #contact {
+  background: #1a1a1a;       /* dark bg */
+  color: #eee;               /* light text */
+}
+
+.dark-mode #contact h2,
+.dark-mode #contact p,
+.dark-mode #contact a {
+  color: #eee;
+}
+
+.dark-mode #contact input,
+.dark-mode #contact textarea {
+  background: #222;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.dark-mode #contact input::placeholder,
+.dark-mode #contact textarea::placeholder {
+  color: #aaa;
+}
+
+.dark-mode #contact button {
+  background: #ff9800;
+  color: #fff;
+}
+
+.dark-mode #contact button:hover {
+  background: #e67e22;
+}
